@@ -159,9 +159,6 @@ IniWrite, 0, SierraWrapper.ini, Log, zClosedClean
 
 Log("== Starting Main...")
 
-;Gosub, TryToStart
-;Log("-- Got the go-ahead from RemoteManagePath`, starting...")
-
 WinMinimizeAll
 CoordMode, Mouse, Screen
 Click (A_ScreenWidth // 2), (A_ScreenHeight // 2) ; this might not be necessary, but it seems to help WinWait.
