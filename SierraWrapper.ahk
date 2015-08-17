@@ -1,10 +1,13 @@
 /* 	
 	Name:		SierraWrapper
-	Version:	1.4
+	Version:	1.5
 	Author:		Lucas Bodnyk (lbodnyk@dcls.org)
 
 	Changelog:
 
+		1.5
+		Added version number to log.
+		
 		1.4
 		Changed 'remote start' dialogue to be silent so as not to confuse staff, and added zSetToOneToKillAllSierraWrappers so wrapper itself can be managed remotely.
 		
@@ -62,7 +65,7 @@ OnExit("ExitFunc") ; Register a function to be called on exit
 
 Try {
 	Log("")
-	Log("   SierraWrapper initializing for machine: " A_ComputerName)
+	Log("   SierraWrapper v1.5 initializing for machine: " A_ComputerName)
 } Catch	{
 	MsgBox Testing SierraWrapper.log failed! You probably need to check file permissions. I won't run without my log! Dying now.
 	ExitApp
